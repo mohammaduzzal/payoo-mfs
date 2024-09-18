@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Mfs</title>
+    
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
 <body>
 
@@ -23,19 +26,19 @@
                             <label class="label">
                               <span class="label-text">Mobile Number</span>
                             </label>
-                            <input type="text" placeholder="Your Number" class="input input-bordered" required />
+                            <input id="phn-number" type="text" placeholder="Your Number" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
                               <span class="label-text">4 Digit Pin</span>
                             </label>
-                            <input type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" required />
+                            <input type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered" autocomplete="off" required />
                             <label class="label">
                               <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                           </div>
                           <div class="form-control mt-6">
-                            <button class="btn btn-primary">Login</button>
+                            <button id="login-btn" class="btn btn-primary">Login</button>
                           </div>
                         </form>
                       </div>
@@ -46,5 +49,6 @@
             </div>
           </div>
     </main>
+    <script src="./js/login.js"></script>
 </body>
 </html>
